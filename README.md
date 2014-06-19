@@ -62,6 +62,6 @@ This box contains the following:
 
 Simply install all requirements and run `vagrant up` on the same directory which has the `Vagrantfile` within. The first time Vagrant will provision all the defined requirements and setup your box. If you alter the settings on `config.yaml` file just run a `vagrant provision` and it will redo the process. Some settings such as port-forwarding require a box restart (`vagrant halt && vagrant up`). Suspend your box with `vagrant suspend` and access it via SSH through `vagrant ssh`. All subsequent `up`'s will not provision your machine if it has already been provisioned.
 
-With the box up just type in `http://drupal8-hackathon.dev:8080` on the browser and Drupal 8 installation should pop up!
+With the box up just type in `http://drupal8-hackathon.dev:8080` or `https://drupal8-hackathon.dev:4433/` on the browser and Drupal 8 installation should pop up!
 
 Be happy! ;)
