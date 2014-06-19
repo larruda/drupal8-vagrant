@@ -15,6 +15,15 @@ vagrantfile-local:
                 SWoWXuJvj8l1:
                     host: '8080'
                     guest: '80'
+                mysql_forward:
+                    host: '33066'
+                    guest: '3306'
+                xdebug_forward:
+                    host: '9000'
+                    guest: '9000'
+                ssl_forward:
+                    host: '4433'
+                    guest: '443'
         provider:
             virtualbox:
                 modifyvm:
@@ -89,6 +98,25 @@ apache:
                 - www.drupal8-hackathon.dev
             docroot: /var/www/drupal8
             port: '80'
+            setenv:
+                - 'APP_ENV dev'
+            override:
+                - All
+            options:
+                - Indexes
+                - FollowSymLinks
+                - MultiViews
+            custom_fragment: ''
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+        5HRe7KIZUodT:
+            servername: drupal8-hackathon.dev
+            serveraliases:
+                - www.drupal8-hackathon.dev
+            docroot: /var/www/drupal8
+            port: '443'
             setenv:
                 - 'APP_ENV dev'
             override:
