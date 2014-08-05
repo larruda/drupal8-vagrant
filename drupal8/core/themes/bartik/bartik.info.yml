@@ -2,8 +2,8 @@ name: Bartik
 type: theme
 description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
 package: Core
-version: VERSION
-core: 8.x
+# version: VERSION
+# core: 8.x
 # @todo use library version once color module is fixed #2228745
 #libraries:
 #  - bartik/base
@@ -38,3 +38,9 @@ regions:
 
 settings:
   shortcut_module_link: false
+
+# Information added by Drupal.org packaging script on 2014-07-02
+version: '8.0-alpha13'
+core: '8.x'
+project: 'drupal'
+datestamp: 1404296640
