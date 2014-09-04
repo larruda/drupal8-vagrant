@@ -15,8 +15,8 @@ regions_hidden:
   - sidebar_first
   - sidebar_second
 
-# Information added by Drupal.org packaging script on 2014-07-02
-version: '8.0-alpha13'
+# Information added by Drupal.org packaging script on 2014-08-06
+version: '8.0.0-alpha14'
 core: '8.x'
 project: 'drupal'
-datestamp: 1404296640
+datestamp: 1407344630
